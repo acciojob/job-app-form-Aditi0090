@@ -1,134 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Application Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .form-container {
-            background: #ffffff;
-            padding: 20px 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            width: 100%;
-        }
-        .form-container h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333333;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-size: 14px;
-            color: #555555;
-        }
-        .form-group input,
-        .form-group select,
-        .form-group button {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 14px;
-        }
-        .form-group button {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-        .form-group button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+ <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="form-container">
-        <h2>Job Application Form</h2>
-        <form action="#" method="POST">
-            <!-- Name -->
-            <div class="form-group">
-                <label for="name">Name*</label>
-                <input type="text" id="name" name="name" required>
-            </div>
+ <form action="job_form" method="post"> 
+ <h1>Job Application Form</h1>
 
-            <!-- Email -->
-            <div class="form-group">
-                <label for="email">Email*</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+  <div> 
+  <label for="name">Name</label>
+ <input type="text" id="name" name="name" required>
+  </div>
+ <br>
 
-            <!-- Gender -->
-            <div class="form-group">
-                <label>Gender*</label>
-                <div>
-                    <input type="radio" id="male" name="gender" value="Male" required>
-                    <label for="male">Male</label>
-                </div>
-                <div>
-                    <input type="radio" id="female" name="gender" value="Female" required>
-                    <label for="female">Female</label>
-                </div>
-                <div>
-                    <input type="radio" id="other" name="gender" value="Other" required>
-                    <label for="other">Other</label>
-                </div>
-            </div>
 
-            <!-- Laptop Brands -->
-            <div class="form-group">
-                <label for="laptop">Laptop Brands</label>
-                <select id="laptop" name="laptop">
-                    <option value="" disabled selected>--Please choose an option--</option>
-                    <option value="Apple">Apple</option>
-                    <option value="Asus">Asus</option>
-                    <option value="HP">HP</option>
-                </select>
-            </div>
+  <div> 
+  <label for="email">Email</label>
+ <input type="email" id="email" name="email" required>
+  </div>
+ <br>
+	
+	
+ <div> 
+  <label>Gender</label>
+  
+ <input type="radio" id="gender" name="gender" value="male" required>
+  <label for="gender">Male</label>
+ 
+ <input type="radio" id="gender" name="gender" value="female" required>
+  <label for="gender">Female</label>
+  </div>
+ <br>
 
-            <!-- Age -->
-            <div class="form-group">
-                <label for="age">Age*</label>
-                <input type="number" id="age" name="age" required>
-            </div>
 
-            <!-- Date of Birth -->
-            <div class="form-group">
-                <label for="dob">Date of Birth*</label>
-                <input type="date" id="dob" name="dob" required>
-            </div>
+  <div> 
+   <label for=laptop>Laptop Brands</label>
+  <select id="laptop" name="laptop">
+ <option value="">--Please choose an option--</option>
+                <option value="Apple">Apple</option>
+                <option value="Asus">Asus</option>
+                <option value="HP">HP</option>
+  </select>
+  </div>
+ <br>
 
-            <!-- Password -->
-            <div class="form-group">
-                <label for="password">Password*</label>
-                <input type="password" id="password" name="password" required>
-            </div>
 
-            <!-- Portfolio URL -->
-            <div class="form-group">
-                <label for="portfolio">Portfolio URL</label>
-                <input type="url" id="portfolio" name="portfolio">
-            </div>
+  
+  <div> 
+  <label for="age">Age</label>
+ <input type="number" id="age" name="age" required>
+  </div>
+ <br>
 
-            <!-- Submit Button -->
-            <div class="form-group">
-                <button type="submit">Submit</button>
-            </div>
-        </form>
-    </div>
+
+<div> 
+  <label for="dob">Date of Birth</label>
+ <input type="date" id="dob" name="dob" required>
+  </div>
+ <br>
+  
+
+  
+
+  <div> 
+  <label for="password">Password</label>
+ <input type="password" id="password" name="password" required>
+  </div>
+ <br>
+
+
+
+  <div> 
+  <label for="portfolio">Portfolio URL</label>
+ <input type="url" id="portfolio" name="portfolio">
+  </div>
+ <br>
+
+
+<div>
+ <button type="submit">Submit</button>
+</div>
+	
+	
+	
+	
+ </form>
+ <!-- the entire body must be written by student -->
+    <script type="text/javascript" src="./script.js">
+</script>
+
 </body>
+
 </html>
